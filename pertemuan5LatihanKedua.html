@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batu Gunting Kertas</title>
+    <style>
+        :root{
+            --text-black: #373C58;
+            --red: #FF5978;
+            --yellow: #ebd54b;
+            --blue: #8FDBD6;
+            --body-color: #F8F6F5;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "inter";
+            box-sizing: border-box;
+            color: var(--text-black);
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: var(--body-color);
+        }
+        h1,h2,h3,h4,h5,h6{
+            font-family: "poppins";
+        }
+        header{
+            margin-top: 24px;
+            text-align: center;
+        }
+        header>p{
+            margin: 12px 0;
+        }
+        section.pilihan-user{
+            display: flex;
+            justify-content: center;
+            margin-top: 16px;
+        }
+        section.pilihan-user>div{
+            margin-right: 24px;
+            padding: 12px;
+            font-size: 100px;
+            cursor: pointer;
+            width: fit-content;
+            border-radius: 24px;
+            border: 1px solid var(--yellow);
+            transition: transform 0.24s, border 0.2s,box-shadow 0.2s;
+        }
+        section.pilihan-user>div:hover{    
+            transform: scale(1.16);
+        }
+        section.pilihan-user>div.fokus{
+            border: 1px solid var(--blue);
+            box-shadow: 0 0px 16px 0.2px rgba(143,219,219,0.24);
+        }
+        .konfirmasi{
+            margin: 32px 0;
+            text-align: center;
+        }
+        .konfirmasi>button{
+            width: 56%;
+            padding: 10px 0px;
+            border-radius: 8px;
+            display: none;
+            cursor: pointer;
+
+        }
+        .konfirmasi>button.tombol-konfirmasi-biru{
+            display: inline-block;
+            border: 1px solid var(--text-black);
+            color: var(--text-black);
+            background-color: var(--blue);
+
+            transition: transform 0.2s, border 0.2s;
+        }
+        .konfirmasi>button.tombol-konfirmasi-biru:hover{
+            border: 1px solid rgb(34, 171, 171);
+            transform: scale(1.08);
+            box-shadow: 0px 0px 16px 0.2px  rgba(34, 171, 171,0.24);
+        }
+    </style>
+    <script src="pertemuan5LatihanKedua.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Batu, Gunting, Kertas</h1>
+        <p>Pilih satu diantara :</p>
+    </header>
+    <section class="pilihan-user">
+        <div id="batu" data-value="batu">&#9994</div>
+        <div id="gunting" data-value="gunting">&#9996</div>      
+        <div id="kertas" data-value="kertas">&#128400</div>
+    </section>
+    <section class="konfirmasi">
+        <button type="button" id="tombol-konfirmasi">Anda belum memilih</button>
+    </section>
+</body>
+</html>
