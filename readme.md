@@ -1,4 +1,4 @@
-BELAJAR GIT DAN GITHUB
+BELAJAR GIT DAN GITHUB!
 
 Repositori ini merupakan repositori eksperimen saya untuk menguasai git dan github.
 Isi repositori ini ialah program web suwit Batu, Gunting, Kertas yang saya koding ketika
